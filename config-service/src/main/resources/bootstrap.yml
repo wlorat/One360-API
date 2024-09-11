@@ -1,0 +1,13 @@
+server:
+  port: 7001
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: main
+          uri: https://github.com/wlorat/One360-Api
+          search-paths: config-data
+  application:
+    name: config-service
+
