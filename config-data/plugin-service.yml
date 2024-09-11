@@ -9,9 +9,7 @@ eureka:
       default-zone: http://localhost:7002/eureka
       
 spring:
-  profiles:
-    active: dev
-
+  
   #Database configuration
   datasource:
     url: jdbc:postgresql://localhost:5432/one-master
