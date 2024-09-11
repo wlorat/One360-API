@@ -19,7 +19,7 @@ import org.virtualizat.one.plugin.service.ServiceResponse;
 import java.sql.SQLException;
 
 @RestController
-@RequestMapping(value="/plugins")
+@RequestMapping(value="/plugin")
 public class PluginController {
 
     @Autowired
