@@ -8,3 +8,11 @@ eureka:
   instance:
     hostname: localhost
  
+ management:
+   endpoints:
+     web:
+       exposure:
+         include: "gateway,healtg,info,routes"
+   endpoint:
+     gateway:
+       enabled: true
