@@ -8,3 +8,13 @@ spring:
     config:
       enabled: true
       uri: http://localhost:7001
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    gateway:
+      enabled: true
+
