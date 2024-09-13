@@ -1,12 +1,4 @@
-spring:    
-  cloud:
-    gateway:
-      routes:
-        - id: plugin-service
-          uri: lb://PLUGIN-SERVICE
-          predicates:
-            - Path=/plugin/**
-            
+           
 eureka:
   client:
     fetch-registry: true

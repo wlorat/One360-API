@@ -9,6 +9,13 @@ spring:
       enabled: true
       uri: http://localhost:7001
 
+    gateway:
+      routes:
+        - id: plugin-service
+          uri: lb://PLUGIN-SERVICE
+          predicates:
+            - Path=/plugin/**
+
 management:
   endpoints:
     web:
