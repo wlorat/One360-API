@@ -7,3 +7,12 @@ eureka:
       default-zone: http://localhost:8761/eureka
   instance:
     hostname: localhost
+    
+spring:    
+  cloud:
+    gateway:
+      routes:
+        - id: plugin-service
+          uri: lb://PLUGIN-SERVICE
+          predicates:
+            - Path=/plugin/**
